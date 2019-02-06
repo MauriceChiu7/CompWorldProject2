@@ -1,3 +1,9 @@
+interface CharacterController {
+    // drawFrame(this.game.clockTick, this.ctx, this.x, this.y, scale)
+    void runRightAnim(clockTick, ctx, x, y, scale);
+    
+}
+
 function CharacterController (game, name) {
     if (name === "luke") {
         var luke = new Character(game, name, "./img/luke_sprites_right.png", "./img/luke_sprites_left.png");
